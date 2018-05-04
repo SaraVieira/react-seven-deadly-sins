@@ -284,6 +284,13 @@ import _ from 'lodash'
             src={images.envy}
           />
         </Slide>
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Heading size={1} textColor="primary" caps>
+            Native Developers after React Native
+          </Heading>
+          </Slide>
+        <Slide bgImage={images.badum} transition={["fade"]} bgColor="secondary">
+        </Slide>
         <Slide bgImage={images.pride} transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Pride

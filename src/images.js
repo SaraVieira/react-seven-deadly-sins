@@ -10,6 +10,7 @@ export default {
     fight: require('./assets/fight.gif'),
     greed: require('./assets/greed.gif'),
     lust: require('./assets/lust.gif'),
+    badum: require('./assets/badum.gif'),
     lazy: require('./assets/lazy.gif'),
     envy: require('./assets/envy.gif'),
     pride: require('./assets/pride.jpg'),
