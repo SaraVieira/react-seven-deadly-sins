@@ -1,0 +1,21 @@
+{
+  "name": "react-seven-deadly-sins",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "spectacle-scripts": "2.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "posttest": "npm run format",
+    "eject": "react-scripts eject",
+    "format": "prettier --write '**/*.{js,css,md}'"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.1"
+  }
+}
