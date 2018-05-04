@@ -1,5 +1,5 @@
 // Import React
-import React from 'react';
+import React from "react"
 
 // Import Spectacle Core tags
 import {
@@ -16,12 +16,12 @@ import {
   Fit,
   Image,
   Appear
-} from 'spectacle';
-import CodeSlide from 'spectacle-code-slide';
+} from "spectacle"
+import CodeSlide from "spectacle-code-slide"
 
-import theme from './theme';
+import theme from "./theme"
 
-import images from './images';
+import images from "./images"
 
 const list = {
   width: 50,
@@ -38,41 +38,44 @@ export default class Presentation extends React.Component {
             Hello
           </Heading>
           <Heading size={1} textColor="primary">
-            <span role="img" aria-label="Hello">👋</span>
+            <span role="img" aria-label="Hello">
+              👋
+            </span>
           </Heading>
         </Slide>
         <Slide bgColor="secondary">
-          <Layout style={{ minWidth: 500, justifyContent: 'space-between' }}>
+          <Layout style={{ minWidth: 500, justifyContent: "space-between" }}>
             <Fit>
               <List
                 style={{
                   padding: 0,
-                  listStyle: 'none',
+                  listStyle: "none",
                   margin: 0,
                   minWidth: 500
-                }}>
+                }}
+              >
                 <ListItem textColor="primary">Sara Vieira</ListItem>
                 <ListItem textColor="primary">Full Stack Developer</ListItem>
                 <ListItem textColor="primary">@NikkitaFTW</ListItem>
-                <ListItem textColor="primary" style={{ display: 'flex', marginTop: 20 }}>
-                  <Image
-                    src={images.soccer}
-                    style={list}
-                  />
+                <ListItem
+                  textColor="primary"
+                  style={{ display: "flex", marginTop: 20 }}
+                >
+                  <Image src={images.soccer} style={list} />
                   <Text textColor="primary" style={{ margin: 0 }}>
-                    Football{' '}
+                    Football{" "}
                   </Text>
                 </ListItem>
-                <ListItem textColor="primary" style={{ display: 'flex', marginTop: 20 }}>
-                  <Image
-                    src={images.zombie}
-                    style={list}
-                  />
+                <ListItem
+                  textColor="primary"
+                  style={{ display: "flex", marginTop: 20 }}
+                >
+                  <Image src={images.zombie} style={list} />
                   <Text textColor="primary" style={{ margin: 0 }}>
                     Horror Movies
                   </Text>
                 </ListItem>
-                <ListItem textColor="primary" style={{ display: 'flex' }}>
+                <ListItem textColor="primary" style={{ display: "flex" }}>
                   <Image src={images.train} />
                 </ListItem>
               </List>
@@ -81,20 +84,17 @@ export default class Presentation extends React.Component {
               <Image
                 style={{
                   width: 350,
-                  maxWidth: 'inherit',
-                  top: '50%',
-                  position: 'relative',
-                  transform: 'translateY(-50%)'
+                  maxWidth: "inherit",
+                  top: "50%",
+                  position: "relative",
+                  transform: "translateY(-50%)"
                 }}
                 src={images.YLDLogo}
               />
             </Fit>
           </Layout>
         </Slide>
-        <Slide
-          transition={["fade"]}
-          bgColor="secondary"
-        >
+        <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Portugal
           </Heading>
@@ -131,16 +131,14 @@ export default class Presentation extends React.Component {
           <Heading size={1} textColor="primary" caps>
             Gluttony
           </Heading>
-          <Image
-            src={images.homer}
-          />
+          <Image src={images.homer} />
         </Slide>
-          <CodeSlide
-            style={{position: 'absolute', top: 0}}
-            bgColor="secondary"
-            transition={[]}
-            lang="jsx"
-            code={`
+        <CodeSlide
+          style={{ position: "absolute", top: 0 }}
+          bgColor="secondary"
+          transition={[]}
+          lang="jsx"
+          code={`
 <Card
   name={product.name}
   image={product.image}
@@ -154,10 +152,11 @@ export default class Presentation extends React.Component {
   liked={isProductLiked(user.id)}
 />
             `}
-            ranges={[
-              { loc: [0, 270], title: "100000 Props are not okay" },
-              { loc: [5, 270], title: "Still not okay" },
-        ]}/>
+          ranges={[
+            { loc: [0, 270], title: "100000 Props are not okay" },
+            { loc: [5, 270], title: "Still not okay" }
+          ]}
+        />
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             You gotta spread them props son
@@ -168,54 +167,54 @@ export default class Presentation extends React.Component {
             </Heading>
           </Appear>
         </Slide>
-          <CodeSlide
-            style={{position: 'absolute', top: 0}}
-            bgColor="secondary"
-            transition={[]}
-            lang="jsx"
-            code={`
+        <CodeSlide
+          style={{ position: "absolute", top: 0 }}
+          bgColor="secondary"
+          transition={[]}
+          lang="jsx"
+          code={`
 <Card
   {...product}
   liked={isProductLiked(user.id)}
 />
             `}
-            ranges={[
-              { loc: [0, 270], title: "Much Clean" },
-              { loc: [5, 270], title: "Very okay" },
-        ]}/>
+          ranges={[
+            { loc: [0, 270], title: "Much Clean" },
+            { loc: [5, 270], title: "Very okay" }
+          ]}
+        />
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Anger
           </Heading>
-          <Image
-            src={images.anger}
-          />
+          <Image src={images.anger} />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Prettier VS Eslint
           </Heading>
         </Slide>
-        <Slide bgImage={images.fight} transition={["fade"]} bgColor="secondary"></Slide>
+        <Slide
+          bgImage={images.fight}
+          transition={["fade"]}
+          bgColor="secondary"
+        />
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Greed
           </Heading>
-          <Image
-            src={images.greed}
-          />
+          <Image src={images.greed} />
         </Slide>
         <CodeSlide
-          style={{ position: 'absolute', top: 0 }}
+          style={{ position: "absolute", top: 0 }}
           bgColor="secondary"
           transition={[]}
           lang="js"
           code={`
 import _ from 'lodash'
             `}
-          ranges={[
-            { loc: [0, 270], title: "Berlin has bad internet" },
-          ]} />
+          ranges={[{ loc: [0, 270], title: "Berlin has bad internet" }]}
+        />
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Pick your functions
@@ -225,13 +224,14 @@ import _ from 'lodash'
           <Heading size={1} textColor="primary" caps>
             Lust
           </Heading>
-          <Image
-            src={images.lust}
-          />
+          <Image src={images.lust} />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <BlockQuote>
-            <Quote>Dude... Have you heard that talk by Michael Jackson? We should remove all HOC and replace them with render props</Quote>
+            <Quote>
+              Dude... Have you heard that talk by Michael Jackson? We should
+              remove all HOC and replace them with render props
+            </Quote>
             <Cite>Some office probably in SF</Cite>
           </BlockQuote>
         </Slide>
@@ -249,9 +249,7 @@ import _ from 'lodash'
           <Heading size={1} textColor="primary" caps>
             Sloth
           </Heading>
-          <Image
-            src={images.lazy}
-          />
+          <Image src={images.lazy} />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
@@ -259,7 +257,7 @@ import _ from 'lodash'
           </Heading>
         </Slide>
         <CodeSlide
-          style={{ position: 'absolute', top: 0 }}
+          style={{ position: "absolute", top: 0 }}
           bgColor="secondary"
           transition={[]}
           lang="jsx"
@@ -274,23 +272,25 @@ import _ from 'lodash'
             `}
           ranges={[
             { loc: [0, 270], title: "NO!!!" },
-            { loc: [3, 6], title: "Inline styles are a NO NO" },
-          ]} />
+            { loc: [3, 6], title: "Inline styles are a NO NO" }
+          ]}
+        />
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Envy
           </Heading>
-          <Image
-            src={images.envy}
-          />
+          <Image src={images.envy} />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Native Developers after React Native
           </Heading>
-          </Slide>
-        <Slide bgImage={images.badum} transition={["fade"]} bgColor="secondary">
         </Slide>
+        <Slide
+          bgImage={images.badum}
+          transition={["fade"]}
+          bgColor="secondary"
+        />
         <Slide bgImage={images.pride} transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Pride
@@ -307,6 +307,6 @@ import _ from 'lodash'
           </Heading>
         </Slide>
       </Deck>
-    );
+    )
   }
 }

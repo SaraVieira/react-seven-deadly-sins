@@ -1,5 +1,5 @@
 {
-  "semi": 0,
+  "semi": false,
   "overrides": [
     {
       "files": "*.md",
