@@ -196,8 +196,7 @@ export default class Presentation extends React.Component {
             Prettier VS Eslint
           </Heading>
         </Slide>
-        <Slide bgImage={images.fight} transition={["fade"]} bgColor="secondary">
-        </Slide>
+        <Slide bgImage={images.fight} transition={["fade"]} bgColor="secondary"></Slide>
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             Greed
@@ -257,6 +256,47 @@ import _ from 'lodash'
         <Slide transition={["fade"]} bgColor="secondary">
           <Heading size={1} textColor="primary" caps>
             AKA why apollo boost is a thing
+          </Heading>
+        </Slide>
+        <CodeSlide
+          style={{ position: 'absolute', top: 0 }}
+          bgColor="secondary"
+          transition={[]}
+          lang="jsx"
+          code={`
+<div
+  style={{
+    position: 'relative',
+    marginTop: 20,
+    background: 'grey'
+  }}
+/>
+            `}
+          ranges={[
+            { loc: [0, 270], title: "NO!!!" },
+            { loc: [3, 6], title: "Inline styles are a NO NO" },
+          ]} />
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Heading size={1} textColor="primary" caps>
+            Envy
+          </Heading>
+          <Image
+            src={images.envy}
+          />
+        </Slide>
+        <Slide bgImage={images.pride} transition={["fade"]} bgColor="secondary">
+          <Heading size={1} textColor="primary" caps>
+            Pride
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Heading size={2} textColor="primary" caps>
+            That's just me being proud of this talk
+          </Heading>
+        </Slide>
+        <Slide bgImage={images.paris} transition={["fade"]} bgColor="secondary">
+          <Heading size={1} textColor="secondary" caps>
+            Thank You
           </Heading>
         </Slide>
       </Deck>
