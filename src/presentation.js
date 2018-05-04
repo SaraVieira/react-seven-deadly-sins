@@ -19,7 +19,7 @@ import {
 } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 
-import theme, { colors } from './theme';
+import theme from './theme';
 
 import images from './images';
 
